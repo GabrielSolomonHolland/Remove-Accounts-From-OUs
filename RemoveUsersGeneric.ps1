@@ -1,7 +1,7 @@
 ﻿#apply OU filter
 $targetOU = "INSERT OU DISTINGUISHED NAME HERE"
 
-$comps = get-adcomputer -filter {Name -like "INSERT FILTER HERE"} -searchbase $targetOU
+$comps = get-adcomputer -filter {Name -like "INSERT NAME CONVENTION FILTER HERE"} -searchbase $targetOU
 
 #put admin accounts, terminated employee accounts ,etc.
 $users = "account.name1","account.name2","account.name3"
